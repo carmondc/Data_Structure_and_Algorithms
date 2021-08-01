@@ -19,7 +19,7 @@ with open('calls.csv', 'r') as f:
     calls = list(reader)
 
 
-# In[25]:
+# In[29]:
 
 
 """
@@ -78,8 +78,7 @@ for i in range (len(calls)):
     if calls[i][0].startswith('(080)'):
         bangalore_called_code.add(find_area_code(calls[i][1]))
         
-bangalore_code = sorted(list(bangalore_code_list))
-
+bangalore_code = sorted(list(bangalore_called_code))
 print('The numbers called by people in Bangalore have codes:')
 print(*bangalore_code, sep='\n')
 
