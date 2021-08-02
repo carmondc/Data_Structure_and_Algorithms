@@ -45,6 +45,7 @@ Print the answer as part of a message:
 The list of codes should be print out one per line in lexicographic order with no duplicates. 
 """
 
+import re
 
 bang_call = [call for call in calls if call[0].startswith("(080)")]
 
